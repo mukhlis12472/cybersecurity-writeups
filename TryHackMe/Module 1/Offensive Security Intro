@@ -1,3 +1,22 @@
 Offensive Security is about thinking like an attacker to find weaknesses before real hackers do.
+
 Goal
 Find a weakness in the FakeBank application. One common mistake is leaving hidden pages accessible.
+
+Open the Terminal
+Open the terminal on the machine. You will be using this to run your first hacking tool, dirbuster. The terminal icon looks like this:
+
+Finding Hidden Pages
+To find hidden pages using Dirbuster, we will use dirb and the URL that we wish to search:
+dirb http://fakebank.thm
+Any lines from the output that start with + are pages that have been found. Dirb will find two URLs.
+http://fakebank.thm/images
+http://fakebank.thm/bank-transfer
+
+To open this URL in the browser of the simulated desktop:
+Add the following: 
+/bank-transfer to the URL in the browser.
+Use your account number 8881 and deposit $2000 (or more). After depositing, return to your account page and confirm the balance is now positive.
+
+When your balance turns positive, a pop-up with green text appears.
+BANK-HACKED
